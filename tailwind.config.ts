@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["'Manrope'", "system-ui", "sans-serif"],
+        display: ["'Space Grotesk'", "'Manrope'", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -80,10 +84,34 @@ export default {
             height: "0",
           },
         },
+        "pulse-ring": {
+          "0%": {
+            transform: "scale(1)",
+            opacity: "0.8",
+          },
+          "70%": {
+            transform: "scale(1.6)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "scale(1.6)",
+            opacity: "0",
+          },
+        },
+        "glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 0 rgba(234, 57, 67, 0.3)",
+          },
+          "50%": {
+            boxShadow: "0 0 35px rgba(234, 57, 67, 0.5)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-ring": "pulse-ring 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite",
+        glow: "glow 2.8s ease-in-out infinite",
       },
     },
   },
