@@ -4,7 +4,7 @@ type LoaderStatus = "idle" | "loading" | "ready" | "error";
 
 declare global {
   interface Window {
-    google?: typeof google;
+    google?: any;
   }
 }
 
