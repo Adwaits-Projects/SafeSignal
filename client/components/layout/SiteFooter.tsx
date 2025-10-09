@@ -12,11 +12,14 @@ const SiteFooter = () => {
           <p className="text-foreground/60">© 2025 SafeSignal | Made with ❤ by SRM Students.</p>
         </div>
         <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-foreground/70">
-          <Link to="/privacy" className="hover:text-foreground">
-            Privacy
+          <Link to="/features" className="hover:text-foreground">
+            Features
           </Link>
-          <Link to="/terms" className="hover:text-foreground">
-            Terms
+          <Link to="/team" className="hover:text-foreground">
+            Team
+          </Link>
+          <Link to="/contact" className="hover:text-foreground">
+            Contact
           </Link>
           <a
             href="mailto:support@safesignal.app"
