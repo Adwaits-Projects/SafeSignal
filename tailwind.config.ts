@@ -100,10 +100,10 @@ export default {
         },
         "glow": {
           "0%, 100%": {
-            boxShadow: "0 0 0 rgba(234, 57, 67, 0.3)",
+            "box-shadow": "0 0 0 rgba(234, 57, 67, 0.2)",
           },
           "50%": {
-            boxShadow: "0 0 35px rgba(234, 57, 67, 0.5)",
+            "box-shadow": "0 0 32px rgba(234, 57, 67, 0.5)",
           },
         },
       },
